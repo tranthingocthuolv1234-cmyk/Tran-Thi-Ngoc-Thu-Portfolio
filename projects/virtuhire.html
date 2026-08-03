@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Business Analyst case study of VirtuHire, an academic VR interview simulation prototype featuring requirement analysis, candidate-journey mapping, user stories, use cases, and an STT–LLM–TTS workflow.">
+  <meta name="theme-color" content="#f0f2f3">
+  <meta property="og:title" content="VirtuHire Case Study | Tran Thi Ngoc Thu">
+  <meta property="og:description" content="Requirements, candidate journey, workflows, use cases, and prototype evidence for the VirtuHire academic project.">
+  <meta property="og:type" content="article">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/virtuhire.css">
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/virtuhire.js" defer></script>
+  <title>VirtuHire Case Study | Tran Thi Ngoc Thu</title>
+</head>
+<body class="case-study-page">
+  <a class="skip-link" href="#main-content">Skip to case study</a>
+
+  <header class="sidebar">
+    <div class="sidebar-top">
+      <a class="identity" href="../index.html#about" aria-label="Tran Thi Ngoc Thu, return to About Me">
+        <img class="profile-image" src="../assets/images/tran-thi-ngoc-thu.jpg" alt="Portrait of Tran Thi Ngoc Thu" width="176" height="176">
+        <span class="identity-copy">
+          <span class="owner-name">Tran Thi Ngoc Thu</span>
+          <span class="owner-role">Business Analyst Intern</span>
+          <span class="owner-education">Technology &amp; Innovation at UEH</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar-body">
+        <span>Menu</span><span aria-hidden="true">+</span>
+      </button>
+    </div>
+
+    <div class="sidebar-body" id="sidebar-body">
+      <nav class="case-home-nav" aria-label="Portfolio navigation">
+        <a href="../index.html#about">ABOUT ME</a>
+        <a href="../index.html#projects" aria-current="page">PROJECTS</a>
+        <a href="../index.html#achievements">ACHIEVEMENTS &amp; ACTIVITIES</a>
+        <a href="../index.html#contact">CONTACT</a>
+      </nav>
+
+      <div class="sidebar-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span aria-hidden="true">◐</span> <span>Dark mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <article class="case-study">
+      <header class="case-hero case-container" id="overview">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Portfolio</a><span aria-hidden="true">/</span>
+          <a href="../index.html#projects">Projects</a><span aria-hidden="true">/</span>
+          <span aria-current="page">VirtuHire</span>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="case-eyebrow">BUSINESS ANALYSIS · AI / VR</p>
+            <h1>VirtuHire</h1>
+            <p class="hero-subtitle">AI-Powered VR Interview Simulator</p>
+            <h2 class="case-major-title summary-heading">SUMMARY</h2>
+            <p class="hero-summary">VirtuHire is an academic VR interview-practice prototype that combines voice interaction and AI-supported feedback. My Business Analyst contribution focused on structuring requirements, mapping the candidate journey, modeling the STT–LLM–TTS workflow, and supporting validation of the core interview experience.</p>
+            <div class="hero-actions" aria-label="Case study actions">
+              <a class="case-button case-button-primary" href="../index.html#projects">Back to Projects</a>
+              <a class="case-button case-button-secondary" href="https://github.com/tranthingocthuolv1234-cmyk/VirtuHire" target="_blank" rel="noreferrer">View GitHub ↗</a>
+            </div>
+          </div>
+
+          <aside class="project-meta" aria-label="Project metadata">
+            <dl>
+              <div><dt>Role</dt><dd>Business Analyst</dd></div>
+              <div><dt>Project type</dt><dd>Academic product project</dd></div>
+              <div><dt>Timeline</dt><dd>April 2026</dd></div>
+              <div><dt>Domain</dt><dd>HRTech · AI · VR</dd></div>
+              <div><dt>Primary user</dt><dd>Candidates and students</dd></div>
+              <div><dt>Tools</dt><dd>Figma · Draw.io · Unity · FastAPI · Gemini · Google Cloud</dd></div>
+            </dl>
+          </aside>
+        </div>
+
+        <figure class="hero-visual">
+          <button class="image-button" type="button" data-lightbox-src="../assets/images/virtuhire/VirtuHire interface overview.png" data-lightbox-alt="VirtuHire visual showing a candidate using a VR headset for interview practice">
+            <img src="../assets/images/virtuhire/VirtuHire interface overview.png" alt="VirtuHire visual showing a candidate using a VR headset for interview practice" width="1680" height="943">
+            <span>Open full image</span>
+          </button>
+        </figure>
+      </header>
+
+      <section class="case-section case-container glance" aria-labelledby="glance-title">
+        <h2 class="visually-hidden" id="glance-title">Project summary</h2>
+        <div class="glance-grid">
+          <article><span class="glance-number">01</span><div><h3>Problem</h3><p>Interview practice can lack realistic repetition, immediate guidance, and a consistent way to review performance across content, clarity, structure, language, and delivery.</p></div></article>
+          <article><span class="glance-number">02</span><div><h3>My contribution</h3><p>Translated the product concept into scoped requirements, user stories, acceptance criteria, journey and stakeholder models, system interactions, and open validation questions.</p></div></article>
+          <article><span class="glance-number">03</span><div><h3>Key deliverables</h3><p>Candidate journey, stakeholder map, requirement catalogue, six selected user stories, acceptance criteria, a sequence diagram, a use case diagram, and prototype review notes.</p></div></article>
+          <article><span class="glance-number">04</span><div><h3>Prototype scope</h3><p>A guided setup flow, VR interview environment, voice capture, AI-supported answer analysis, structured feedback, and a performance summary for repeated practice.</p></div></article>
+        </div>
+      </section>
+
+      <div class="case-body case-container">
+        <aside class="case-toc" aria-label="Project contents">
+          <details open>
+            <summary>Project contents</summary>
+            <nav>
+              <a href="#problem">Overview</a>
+              <a href="#role">Role</a>
+              <a href="#journey">Journey</a>
+              <a href="#stakeholders">Stakeholders</a>
+              <a href="#requirements">Requirements</a>
+              <a href="#user-stories">User Stories</a>
+              <a href="#workflow">Workflow</a>
+              <a href="#use-case">Use Case</a>
+              <a href="#prototype">Prototype</a>
+              <a href="#outcomes">Outcomes</a>
+              <a href="#lessons">Lessons</a>
+            </nav>
+          </details>
+        </aside>
+
+        <div class="case-content">
+          <section class="case-section" id="problem" aria-labelledby="problem-title" data-case-section>
+            <p class="case-eyebrow">01</p>
+            <h2 class="case-major-title" id="problem-title">OVERVIEW</h2>
+            <h3 class="section-subheading">Problem and context</h3>
+            <p>Students and early-career candidates often need repeated interview practice, but access to timely, consistent feedback can be limited. Self-practice also makes it difficult to recreate the pressure and conversational rhythm of a live interview.</p>
+            <p>VirtuHire explored how a guided VR environment, voice interaction, and AI-supported analysis could create a more structured practice loop. The academic project focused on clarifying the core experience and the system behavior required to support it.</p>
+
+            <div class="challenge-grid" aria-label="Key challenges">
+              <article><span>01</span><h3>Realistic practice</h3><p>Create an interview flow that feels guided without removing the candidate’s agency.</p></article>
+              <article><span>02</span><h3>Voice reliability</h3><p>Make capture, transcription, processing, and playback states understandable.</p></article>
+              <article><span>03</span><h3>Useful feedback</h3><p>Turn answer analysis into specific, reviewable improvement guidance.</p></article>
+              <article><span>04</span><h3>Recoverable errors</h3><p>Define clear fallback behavior when audio or AI services are unavailable.</p></article>
+            </div>
+
+            <blockquote class="design-question">
+              <span>Design question</span>
+              <p>How might we help candidates practise interviews in an immersive environment while receiving feedback that is clear, consistent, and actionable?</p>
+            </blockquote>
+          </section>
+
+          <section class="case-section" id="role" aria-labelledby="role-title" data-case-section>
+            <p class="case-eyebrow">02</p>
+            <h2 class="case-major-title" id="role-title">ROLE</h2>
+            <div class="role-grid">
+              <article><h3>Requirement analysis</h3><p>Clarified core user needs, functional behavior, error states, dependencies, and unresolved decisions.</p></article>
+              <article><h3>Experience modeling</h3><p>Mapped the candidate journey from setup to feedback and identified moments of uncertainty.</p></article>
+              <article><h3>System modeling</h3><p>Connected user actions with Unity, backend, speech, language-model, and voice-response interactions.</p></article>
+              <article><h3>Validation support</h3><p>Reviewed prototype screens against selected requirements and documented questions for future testing.</p></article>
+            </div>
+          </section>
+
+          <section class="case-section" id="journey" aria-labelledby="journey-title" data-case-section>
+            <p class="case-eyebrow">03</p>
+            <h2 class="case-major-title" id="journey-title">JOURNEY</h2>
+            <p class="artifact-note">This journey is a structured hypothesis based on the intended product flow and prototype—not a claim of observed behavior from completed candidate research. It provides a testable baseline for later user validation.</p>
+            <ol class="journey-stages">
+              <li><span>01</span><strong>Prepare</strong><small>Understand the experience</small></li>
+              <li><span>02</span><strong>Configure</strong><small>Choose language and role</small></li>
+              <li><span>03</span><strong>Interview</strong><small>Hear and answer questions</small></li>
+              <li><span>04</span><strong>Receive feedback</strong><small>Review answer guidance</small></li>
+              <li><span>05</span><strong>Improve</strong><small>Use the report to practise again</small></li>
+            </ol>
+            <figure class="artifact-figure">
+              <button class="image-button" type="button" data-lightbox-src="../assets/images/virtuhire/candidate-journey-map.png" data-lightbox-alt="Candidate journey map for the VirtuHire interview practice flow">
+                <img src="../assets/images/virtuhire/candidate-journey-map.png" alt="Candidate journey map for the VirtuHire interview practice flow" loading="lazy" width="7280" height="1257">
+                <span>Open full image</span>
+              </button>
+              <figcaption>Candidate journey map · analytical hypothesis for future validation.</figcaption>
+            </figure>
+          </section>
+
+          <section class="case-section" id="stakeholders" aria-labelledby="stakeholders-title" data-case-section>
+            <p class="case-eyebrow">04</p>
+            <h2 class="case-major-title" id="stakeholders-title">STAKEHOLDERS</h2>
+            <h3 class="section-subheading">Stakeholder model</h3>
+            <p>The stakeholder model organizes the perspectives the product would need to account for. It is an analytical planning artifact; the engagement approaches below are recommended future activities rather than completed interview evidence.</p>
+            <div class="table-scroll" tabindex="0" role="region" aria-label="Stakeholder analysis table">
+              <table>
+                <thead><tr><th>Stakeholder group</th><th>Primary interest</th><th>Product concern</th><th>Recommended engagement</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Candidates / students</th><td>Effective, low-risk practice</td><td>Clarity, confidence, useful feedback</td><td>Task-based usability sessions</td></tr>
+                  <tr><th scope="row">HR subject-matter expert</th><td>Credible interview guidance</td><td>Question and feedback quality</td><td>Content review and rubric workshop</td></tr>
+                  <tr><th scope="row">Technical team</th><td>Feasible, stable experience</td><td>Latency, integration, error recovery</td><td>Requirement review and technical spikes</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <figure class="artifact-figure compact-artifact">
+              <button class="image-button" type="button" data-lightbox-src="../assets/images/virtuhire/stakeholder-map.png" data-lightbox-alt="VirtuHire stakeholder mapping matrix">
+                <img src="../assets/images/virtuhire/stakeholder-map.png" alt="VirtuHire stakeholder mapping matrix" loading="lazy" width="1170" height="700">
+                <span>Open full image</span>
+              </button>
+              <figcaption>Stakeholder map · proposed influence and interest model for planning future engagement.</figcaption>
+            </figure>
+          </section>
+
+          <section class="case-section" id="requirements" aria-labelledby="requirements-title" data-case-section>
+            <p class="case-eyebrow">05</p>
+            <h2 class="case-major-title" id="requirements-title">REQUIREMENTS</h2>
+            <div class="scope-grid">
+              <article><h3>In scope</h3><ul><li>Interview setup and guidance</li><li>Language and position selection</li><li>VR interview question flow</li><li>Voice capture and transcription</li><li>AI-supported answer analysis</li><li>Feedback and performance report</li></ul></article>
+              <article><h3>Out of scope</h3><ul><li>Recruiter hiring decisions</li><li>Production-scale account management</li><li>Verified scoring for employment selection</li><li>Live interviewer marketplace</li><li>Enterprise analytics dashboard</li><li>Claims of clinical or psychological assessment</li></ul></article>
+            </div>
+
+            <div class="table-scroll" tabindex="0" role="region" aria-label="Selected requirements table">
+              <table class="requirements-table">
+                <thead><tr><th>ID</th><th>Requirement</th><th>Type</th><th>Priority</th><th>Validation note</th></tr></thead>
+                <tbody>
+                  <tr><td>FR-01</td><td>The system shall present guidance before interview setup.</td><td>Functional</td><td>Not specified</td><td>Visible in welcome screen</td></tr>
+                  <tr><td>FR-02</td><td>The candidate shall be able to select an available interview language.</td><td>Functional</td><td>Not specified</td><td>Visible in language screen</td></tr>
+                  <tr><td>FR-03</td><td>The candidate shall be able to select a target position.</td><td>Functional</td><td>Not specified</td><td>Visible in position screen</td></tr>
+                  <tr><td>FR-04</td><td>The system shall prevent interview start when required setup is incomplete.</td><td>Functional</td><td>Not specified</td><td>Requires interaction testing</td></tr>
+                  <tr><td>FR-05</td><td>The system shall present interview questions in the VR session.</td><td>Functional</td><td>Not specified</td><td>Workflow represented</td></tr>
+                  <tr><td>FR-06</td><td>The system shall capture and submit the candidate’s spoken answer.</td><td>Functional</td><td>Not specified</td><td>Workflow represented</td></tr>
+                  <tr><td>FR-07</td><td>The system shall convert a submitted spoken answer into text.</td><td>Integration</td><td>Not specified</td><td>Sequence documented</td></tr>
+                  <tr><td>FR-08</td><td>The system shall return structured feedback when analysis succeeds.</td><td>Functional</td><td>Not specified</td><td>Visible in report concept</td></tr>
+                  <tr><td>FR-09</td><td>The system shall show a clear recovery message when voice or AI processing fails.</td><td>Error handling</td><td>Not specified</td><td>Requires failure-state test</td></tr>
+                  <tr><td>NFR-01</td><td>The interaction shall communicate processing states and avoid unexplained waiting.</td><td>Non-functional</td><td>Not specified</td><td>Latency threshold unresolved</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="artifact-insight artifact-purpose"><div><h3>Artifact purpose</h3><p>Create a shared, traceable baseline for design, development, and validation while keeping the first prototype focused on a complete practice loop before expanding platform features.</p></div></div>
+          </section>
+
+          <section class="case-section" id="user-stories" aria-labelledby="stories-title" data-case-section>
+            <p class="case-eyebrow">06</p>
+            <h2 class="case-major-title" id="stories-title">USER STORIES</h2>
+            <div class="story-list">
+              <details open>
+                <summary><span>US-01</span> Configure an interview session</summary>
+                <div><p>As a candidate, I want to configure my interview language and target position so that the practice session matches my needs.</p><ul><li>Given the candidate opens setup, when the options load, then available languages and positions are displayed and can be selected.</li><li>Given required setup is complete, when Start Interview is selected, then the simulation begins.</li><li>Given setup is incomplete, when the candidate attempts to start, then clear validation is shown.</li></ul></div>
+              </details>
+              <details>
+                <summary><span>US-02</span> Enter a guided VR interview</summary>
+                <div><p>As a candidate, I want to enter a guided VR interview environment so that I can practise in a more realistic context.</p><ul><li>Given the environment loads, when the scene is ready, then the interview setting is displayed.</li><li>Given the interview begins, when the first question is ready, then the system presents it.</li><li>Given the interview is active, when the candidate continues, then the system guides them through the defined flow.</li></ul></div>
+              </details>
+              <details>
+                <summary><span>US-03</span> Answer by voice</summary>
+                <div><p>As a candidate, I want to answer interview questions by voice so that the practice resembles a spoken interview.</p><ul><li>Given a question is presented, when the candidate begins speaking, then the system captures the voice input.</li><li>Given the candidate finishes, when the answer is submitted, then it is sent for speech-to-text processing.</li><li>Given transcription succeeds, when text is returned, then it is sent for AI analysis.</li><li>Given voice capture or transcription fails, then a clear message and retry path are shown.</li></ul></div>
+              </details>
+              <details>
+                <summary><span>US-04</span> Receive AI-supported analysis</summary>
+                <div><p>As a candidate, I want my answer analyzed against consistent dimensions so that I can understand its quality.</p><ul><li>Given answer text is available, when analysis begins, then predefined dimensions are applied.</li><li>Given analysis succeeds, when results return, then relevance, clarity, structure, and communication are included.</li><li>Given analysis fails, then the system presents a useful fallback state.</li></ul></div>
+              </details>
+              <details>
+                <summary><span>US-05</span> Review structured feedback</summary>
+                <div><p>As a candidate, I want structured feedback after answering so that I know what to maintain and improve.</p><ul><li>Given analysis is complete, when feedback is generated, then it follows a consistent structure.</li><li>Given feedback is displayed, when the candidate reviews it, then strengths, weaknesses, and improvement guidance are visible.</li><li>Given feedback is invalid or a service issue occurs, then a fallback message is shown.</li></ul></div>
+              </details>
+              <details>
+                <summary><span>US-06</span> Review a performance report</summary>
+                <div><p>As a candidate, I want a performance report so that I can review the session and plan another practice attempt.</p><ul><li>Given the session is complete, when the result is opened, then a performance report is displayed.</li><li>Given the report is visible, when it is reviewed, then a summary and suggestions are available.</li><li>Given the candidate chooses to practise again, when returning to setup, then a new session can be configured.</li></ul></div>
+              </details>
+            </div>
+          </section>
+
+          <section class="case-section" id="workflow" aria-labelledby="workflow-title" data-case-section>
+            <p class="case-eyebrow">07</p>
+            <h2 class="case-major-title" id="workflow-title">WORKFLOW</h2>
+            <figure class="artifact-figure portrait-artifact">
+              <button class="image-button" type="button" data-lightbox-src="../assets/images/virtuhire/sequence-diagram.png" data-lightbox-alt="Sequence diagram showing the VirtuHire voice and AI workflow">
+                <img src="../assets/images/virtuhire/sequence-diagram.png" alt="Sequence diagram showing the VirtuHire voice and AI workflow" loading="lazy" width="1500" height="2117">
+                <span>Open full image</span>
+              </button>
+              <figcaption>Sequence diagram · user action, Unity, backend, speech, language-model, and voice-response interactions.</figcaption>
+            </figure>
+            <ol class="workflow-stages">
+              <li><span>01</span><div><h3>Capture</h3><p>The candidate records and submits a spoken answer in the Unity experience.</p></div></li>
+              <li><span>02</span><div><h3>Transcribe</h3><p>The backend sends audio to speech-to-text and returns a transcript.</p></div></li>
+              <li><span>03</span><div><h3>Analyze</h3><p>The transcript and interview context are sent to the language model.</p></div></li>
+              <li><span>04</span><div><h3>Respond</h3><p>Structured feedback is returned; text-to-speech can provide an audible response.</p></div></li>
+              <li><span>05</span><div><h3>Review</h3><p>The candidate reviews feedback and the summarized performance report.</p></div></li>
+            </ol>
+            <div class="artifact-insight three-up"><div><h3>Artifact purpose</h3><p>Make integration responsibilities and alternate flows visible.</p></div><div><h3>Key decision</h3><p>Separate capture, orchestration, and AI services so each state can be handled clearly.</p></div><div><h3>Open questions</h3><p>Acceptable latency, retry limits, transcript editing, data retention, and model-output safeguards.</p></div></div>
+          </section>
+
+          <section class="case-section" id="use-case" aria-labelledby="use-case-title" data-case-section>
+            <p class="case-eyebrow">08</p>
+            <h2 class="case-major-title" id="use-case-title">USE CASE</h2>
+            <figure class="artifact-figure compact-artifact">
+              <button class="image-button" type="button" data-lightbox-src="../assets/images/virtuhire/use-case-diagram.png" data-lightbox-alt="VirtuHire use case diagram showing candidate and AI API actors">
+                <img src="../assets/images/virtuhire/use-case-diagram.png" alt="VirtuHire use case diagram showing candidate and AI API actors" loading="lazy" width="1630" height="928">
+                <span>Open full image</span>
+              </button>
+              <figcaption>Use case diagram · candidate-facing functions and supporting AI API interactions.</figcaption>
+            </figure>
+            <div class="function-groups">
+              <article><h3>Candidate-facing functions</h3><ul><li>Configure interview</li><li>Start and navigate a session</li><li>Answer questions by voice</li><li>Review feedback and performance</li></ul></article>
+              <article><h3>AI-supported functions</h3><ul><li>Convert speech to text</li><li>Analyze answer content</li><li>Generate structured feedback</li><li>Return an audible response</li></ul></article>
+            </div>
+            <p>The use case model supported requirement traceability by separating user goals from the external services needed to complete them. It also highlighted failure paths that require explicit requirements rather than assuming every AI request succeeds.</p>
+          </section>
+
+          <section class="case-section" id="prototype" aria-labelledby="prototype-title" data-case-section>
+            <p class="case-eyebrow">09</p>
+            <h2 class="case-major-title" id="prototype-title">PROTOTYPE</h2>
+            <p>These screens show the implemented academic prototype at key points in the candidate flow. They are evidence of the interface state—not evidence of production readiness or completed user validation.</p>
+            <div class="prototype-grid">
+              <figure>
+                <button class="image-button" type="button" data-lightbox-src="../assets/images/virtuhire/welcome-screen.png" data-lightbox-alt="VirtuHire welcome screen in the VR interview environment"><img src="../assets/images/virtuhire/welcome-screen.png" alt="VirtuHire welcome screen in the VR interview environment" loading="lazy" width="2048" height="1143"><span>Open full image</span></button>
+                <figcaption><strong>Welcome and orientation</strong><span>Related requirement: FR-01 · Related story: US-02</span></figcaption>
+              </figure>
+              <figure>
+                <button class="image-button" type="button" data-lightbox-src="../assets/images/virtuhire/language-selection.png" data-lightbox-alt="VirtuHire language selection screen"><img src="../assets/images/virtuhire/language-selection.png" alt="VirtuHire language selection screen" loading="lazy" width="2048" height="1143"><span>Open full image</span></button>
+                <figcaption><strong>Language selection</strong><span>Related requirement: FR-02 · Related story: US-01</span></figcaption>
+              </figure>
+              <figure>
+                <button class="image-button" type="button" data-lightbox-src="../assets/images/virtuhire/position-selection.png" data-lightbox-alt="VirtuHire position selection screen"><img src="../assets/images/virtuhire/position-selection.png" alt="VirtuHire position selection screen" loading="lazy" width="2048" height="1143"><span>Open full image</span></button>
+                <figcaption><strong>Position selection</strong><span>Related requirement: FR-03 · Related story: US-01</span></figcaption>
+              </figure>
+              <figure>
+                <button class="image-button" type="button" data-lightbox-src="../assets/images/virtuhire/performance-report.png" data-lightbox-alt="VirtuHire interview performance report"><img src="../assets/images/virtuhire/performance-report.png" alt="VirtuHire interview performance report" loading="lazy" width="2048" height="1153"><span>Open full image</span></button>
+                <figcaption><strong>Performance report</strong><span>Related requirement: FR-08 · Related story: US-06</span></figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="case-section" id="outcomes" aria-labelledby="outcomes-title" data-case-section>
+            <p class="case-eyebrow">10</p>
+            <h2 class="case-major-title" id="outcomes-title">OUTCOMES</h2>
+            <p>The project produced a working academic prototype and a clearer set of product artifacts. Validation in this case refers to reviewing consistency between the intended flow, documented requirements, diagrams, and visible prototype states; it does not represent a formal candidate pilot.</p>
+            <div class="outcome-grid">
+              <article><h3>What the artifacts clarified</h3><ul><li>The end-to-end candidate practice loop</li><li>Responsibilities across interface, backend, and AI services</li><li>Traceability from selected requirements to prototype screens</li><li>Failure paths needing explicit user feedback</li></ul></article>
+              <article><h3>What remains unvalidated</h3><ul><li>Candidate comprehension and comfort in VR</li><li>Feedback usefulness and trust</li><li>Acceptable end-to-end response time</li><li>Scoring consistency across roles and languages</li></ul></article>
+            </div>
+          </section>
+
+          <section class="case-section" id="lessons" aria-labelledby="lessons-title" data-case-section>
+            <p class="case-eyebrow">11</p>
+            <h2 class="case-major-title" id="lessons-title">LESSONS</h2>
+            <div class="lessons-grid">
+              <article><h3>What I learned</h3><ul><li>AI features need conventional product requirements as much as they need prompts and models.</li><li>Waiting, error, and retry states are part of the core journey.</li><li>Diagrams become more useful when each one supports a concrete product decision.</li><li>Academic assumptions should remain clearly separated from validated user evidence.</li></ul></article>
+              <article><h3>Recommended next steps</h3><ol><li>Run moderated usability sessions with target candidates.</li><li>Review question and feedback criteria with an HR subject-matter expert.</li><li>Define latency, accessibility, privacy, and data-retention requirements.</li><li>Test transcript correction and fallback interactions.</li><li>Refine report language based on comprehension testing.</li></ol></article>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <nav class="project-navigation case-container" aria-label="Project navigation">
+        <a class="return-link" href="../index.html">Return</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer>
+    <div class="section-inner footer-inner">
+      <p>© <span id="current-year">2026</span> Tran Thi Ngoc Thu</p>
+      <p>VirtuHire · Business Analysis case study</p>
+      <a href="#overview">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Expanded project image">
+    <button class="lightbox-close" type="button" aria-label="Close image">Close ×</button>
+    <img alt="Expanded project artifact">
+  </dialog>
+</body>
+</html>

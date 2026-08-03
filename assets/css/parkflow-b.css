@@ -1,0 +1,63 @@
+.parkflow-page .hero-visual img,
+.parkflow-page .artifact-figure img,
+.parkflow-page .prototype-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.parkflow-page .hero-visual img { aspect-ratio: auto; }
+
+.parkflow-page .hero-copy,
+.parkflow-page .project-meta,
+.parkflow-page .case-content,
+.parkflow-page .prototype-grid figure { min-width: 0; }
+
+.parkflow-page .hero-visual figcaption {
+  margin-top: .8rem;
+  color: var(--muted);
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.parkflow-page .process-analysis + .process-analysis { margin-top: 3.5rem; }
+
+.parkflow-page .use-case-module + .use-case-module { margin-top: 4rem; }
+
+.parkflow-page .use-case-module > p,
+.parkflow-page .process-analysis > p { color: var(--muted); }
+
+.parkflow-page .prototype-grid figcaption {
+  gap: .45rem;
+  text-align: left;
+}
+
+.parkflow-page .prototype-grid figcaption ul {
+  margin: .15rem 0;
+  padding-left: 1.1rem;
+}
+
+.parkflow-page .prototype-grid figcaption li {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.parkflow-page .prototype-grid figcaption em {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 680px) {
+  .parkflow-page { overflow-x: hidden; }
+
+  .parkflow-page .case-container { max-width: 100%; }
+
+  .parkflow-page .hero-copy p,
+  .parkflow-page .project-meta dd,
+  .parkflow-page .story-list summary { overflow-wrap: anywhere; }
+
+  .parkflow-page .process-analysis + .process-analysis,
+  .parkflow-page .use-case-module + .use-case-module { margin-top: 3rem; }
+}
