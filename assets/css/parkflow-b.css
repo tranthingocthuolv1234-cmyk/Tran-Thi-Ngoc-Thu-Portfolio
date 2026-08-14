@@ -16,7 +16,7 @@
 .parkflow-page .hero-visual figcaption {
   margin-top: .8rem;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
   font-style: italic;
   line-height: 1.5;
   text-align: center;
@@ -40,13 +40,13 @@
 }
 
 .parkflow-page .prototype-grid figcaption li {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.45;
 }
 
 .parkflow-page .prototype-grid figcaption em {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 @media (max-width: 680px) {
