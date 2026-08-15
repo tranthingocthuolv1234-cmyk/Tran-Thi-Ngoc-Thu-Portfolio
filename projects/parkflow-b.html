@@ -21,30 +21,19 @@
 <body class="case-study-page parkflow-page">
   <a class="skip-link" href="#main-content">Skip to case study</a>
 
-  <header class="sidebar">
-    <div class="sidebar-top">
-      <a class="identity" href="../index.html#about" aria-label="Tran Thi Ngoc Thu, return to About Me">
-        <img class="profile-image" src="../assets/images/tran-thi-ngoc-thu.jpg" alt="Portrait of Tran Thi Ngoc Thu" width="176" height="176">
-        <span class="identity-copy">
-          <span class="owner-name">Tran Thi Ngoc Thu</span>
-          <span class="owner-role">Business Analyst</span>
-          <span class="owner-education">Technology &amp; Innovation at UEH</span>
-        </span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar-body">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-identity" href="../index.html" aria-label="Tran Thi Ngoc Thu, return to portfolio">Tran Thi Ngoc Thu</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
         <span>Menu</span><span aria-hidden="true">+</span>
       </button>
-    </div>
-
-    <div class="sidebar-body" id="sidebar-body">
-      <nav class="case-home-nav" aria-label="Portfolio navigation">
-        <a href="../index.html#about">ABOUT ME</a>
-        <a href="../index.html#projects" aria-current="page">PROJECTS</a>
-        <a href="../index.html#achievements">ACHIEVEMENTS &amp; ACTIVITIES</a>
-        <a href="../index.html#contact">CONTACT</a>
-      </nav>
-
-      <div class="sidebar-actions">
+      <div class="nav-panel" id="site-navigation">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="../index.html#projects" aria-current="page">Work</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#achievements">Activities</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
         <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
           <span aria-hidden="true">◐</span> <span>Dark mode</span>
         </button>
@@ -61,29 +50,28 @@
           <span aria-current="page">ParkFlow B</span>
         </nav>
 
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <p class="case-eyebrow">BUSINESS ANALYSIS · SMART CAMPUS</p>
+        <div class="project-heading">
+          <div class="project-classification" aria-label="Case study classification">
+            <p>02 / Case study</p>
+            <p>Business Analysis · Smart Campus</p>
+          </div>
+          <div class="project-heading-copy">
             <h1>ParkFlow B</h1>
             <p class="hero-subtitle">Smart Parking Optimization</p>
-            <h2 class="case-major-title summary-heading">SUMMARY</h2>
-            <p class="hero-summary">ParkFlow B is an academic smart-parking case study that explores how automated access, cashless payment, and real-time parking information could improve the parking experience at UEH Campus B. My Business Analyst contribution focused on root-cause analysis, AS-IS/TO-BE process modeling, requirements, use cases, and low-fidelity wireframes.</p>
-            <div class="hero-actions" aria-label="Case study actions">
-              <a class="case-button case-button-primary" href="../index.html#projects">Back to Projects</a>
-            </div>
+            <p class="hero-summary">An academic smart-parking case study exploring automated access, cashless payment, and real-time parking information at UEH Campus B.</p>
           </div>
-
-          <aside class="project-meta" aria-label="Project metadata">
-            <dl>
-              <div><dt>Role</dt><dd>Business Analyst</dd></div>
-              <div><dt>Project type</dt><dd>Academic Business Analysis and system-design project</dd></div>
-              <div><dt>Duration</dt><dd>January 2025 · 3 months</dd></div>
-              <div><dt>Domain</dt><dd>Smart Campus · Parking Operations · Fintech</dd></div>
-              <div><dt>Primary users</dt><dd>Students, parking staff, and campus management</dd></div>
-              <div><dt>Tools</dt><dd>Figma · Draw.io · Miro · Notion</dd></div>
-            </dl>
-          </aside>
         </div>
+
+        <aside class="project-meta" aria-label="Project metadata">
+          <dl>
+            <div><dt>Role</dt><dd>Business Analyst</dd></div>
+            <div><dt>Duration</dt><dd>January 2025 · 3 months</dd></div>
+            <div><dt>Domain</dt><dd>Smart Campus · Parking Operations · Fintech</dd></div>
+            <div><dt>Project type</dt><dd>Academic Business Analysis and system-design project</dd></div>
+            <div><dt>Primary users</dt><dd>Students, parking staff, and campus management</dd></div>
+            <div><dt>Tools</dt><dd>Figma · Draw.io · Miro · Notion</dd></div>
+          </dl>
+        </aside>
 
         <figure class="hero-visual">
           <button class="image-button" type="button" data-lightbox-src="../assets/images/parkflow-b/hero-parking-journey.png" data-lightbox-alt="Nine-step storyboard of the proposed ParkFlow B student parking journey from app launch to exit confirmation">
