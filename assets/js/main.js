@@ -2,10 +2,10 @@ document.documentElement.classList.add('js');
 
 const root = document.documentElement;
 const menuButton = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.sidebar-body');
+const menu = document.querySelector('.nav-panel');
 const themeButton = document.querySelector('.theme-toggle');
 const navLinks = [...document.querySelectorAll('.primary-nav a')];
-const sections = navLinks.map(link => document.querySelector(link.hash));
+const sections = navLinks.map(link => document.querySelector(link.hash)).filter(Boolean);
 
 const preferredTheme = localStorage.getItem('theme') ||
   (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -16,7 +16,7 @@ function setTheme(theme) {
   themeButton.setAttribute('aria-pressed', String(dark));
   themeButton.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} mode`);
   themeButton.lastElementChild.textContent = dark ? 'Light mode' : 'Dark mode';
-  document.querySelector('meta[name="theme-color"]').content = dark ? '#242d31' : '#f0f2f3';
+  document.querySelector('meta[name="theme-color"]').content = dark ? '#1c2327' : '#ffffff';
 }
 
 setTheme(preferredTheme);
@@ -37,6 +37,14 @@ navLinks.forEach(link => link.addEventListener('click', () => {
   menuButton.setAttribute('aria-expanded', 'false');
   menuButton.lastElementChild.textContent = '+';
 }));
+
+document.addEventListener('keydown', event => {
+  if (event.key !== 'Escape' || !menu.classList.contains('is-open')) return;
+  menu.classList.remove('is-open');
+  menuButton.setAttribute('aria-expanded', 'false');
+  menuButton.lastElementChild.textContent = '+';
+  menuButton.focus();
+});
 
 const observer = new IntersectionObserver(entries => {
   const visible = entries.filter(entry => entry.isIntersecting)
