@@ -50,13 +50,13 @@
         </nav>
 
         <div class="project-heading">
-          <div class="project-classification" aria-label="Project name">
-            <p>Project / VirtuHire</p>
+          <div class="project-classification" aria-label="Project classification">
+            <p>01 / Case study · Business Analysis · AI / VR</p>
           </div>
           <div class="project-heading-copy">
             <h1>VirtuHire</h1>
             <p class="hero-subtitle">AI-powered VR Interview Simulator</p>
-            <p class="hero-summary">An academic VR interview-practice prototype combining voice interaction with AI-supported feedback.</p>
+            <p class="hero-summary">An academic VR interview-practice prototype combining voice interaction with AI-supported feedback. My Business Analysis work focused on requirements, the candidate journey, system workflow, and prototype validation.</p>
             <a class="project-source-link" href="https://github.com/tranthingocthuolv1234-cmyk/VirtuHire" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </div>
@@ -112,9 +112,8 @@
 
         <div class="case-content">
           <section class="case-section" id="problem" aria-labelledby="problem-title" data-case-section>
-            <p class="case-eyebrow">01</p>
-            <h2 class="case-major-title" id="problem-title">OVERVIEW</h2>
-            <h3 class="section-subheading">Problem and context</h3>
+            <p class="case-eyebrow">01 / Context</p>
+            <h2 class="case-major-title" id="problem-title">Why does interview practice fall short?</h2>
             <p>Students and early-career candidates often need repeated interview practice, but access to timely, consistent feedback can be limited. Self-practice also makes it difficult to recreate the pressure and conversational rhythm of a live interview.</p>
             <p>VirtuHire explored how a guided VR environment, voice interaction, and AI-supported analysis could create a more structured practice loop. The academic project focused on clarifying the core experience and the system behavior required to support it.</p>
 
@@ -132,8 +131,8 @@
           </section>
 
           <section class="case-section" id="role" aria-labelledby="role-title" data-case-section>
-            <p class="case-eyebrow">02</p>
-            <h2 class="case-major-title" id="role-title">ROLE</h2>
+            <p class="case-eyebrow">02 / My role</p>
+            <h2 class="case-major-title" id="role-title">What did I contribute to the product?</h2>
             <div class="role-grid">
               <article><h3>Requirement analysis</h3><p>Clarified core user needs, functional behavior, error states, dependencies, and unresolved decisions.</p></article>
               <article><h3>Experience modeling</h3><p>Mapped the candidate journey from setup to feedback and identified moments of uncertainty.</p></article>
@@ -143,8 +142,8 @@
           </section>
 
           <section class="case-section" id="journey" aria-labelledby="journey-title" data-case-section>
-            <p class="case-eyebrow">03</p>
-            <h2 class="case-major-title" id="journey-title">JOURNEY</h2>
+            <p class="case-eyebrow">03 / Journey</p>
+            <h2 class="case-major-title" id="journey-title">How does the candidate move through the experience?</h2>
             <p class="artifact-note">This journey is a structured hypothesis based on the intended product flow and prototype—not a claim of observed behavior from completed candidate research. It provides a testable baseline for later user validation.</p>
             <ol class="journey-stages">
               <li><span>01</span><strong>Prepare</strong><small>Understand the experience</small></li>
@@ -163,9 +162,8 @@
           </section>
 
           <section class="case-section" id="stakeholders" aria-labelledby="stakeholders-title" data-case-section>
-            <p class="case-eyebrow">04</p>
-            <h2 class="case-major-title" id="stakeholders-title">STAKEHOLDERS</h2>
-            <h3 class="section-subheading">Stakeholder model</h3>
+            <p class="case-eyebrow">04 / Stakeholders</p>
+            <h2 class="case-major-title" id="stakeholders-title">Who shapes the quality of the experience?</h2>
             <p>The stakeholder model organizes the perspectives the product would need to account for. It is an analytical planning artifact; the engagement approaches below are recommended future activities rather than completed interview evidence.</p>
             <div class="table-scroll" tabindex="0" role="region" aria-label="Stakeholder analysis table">
               <table>
@@ -187,14 +185,24 @@
           </section>
 
           <section class="case-section" id="requirements" aria-labelledby="requirements-title" data-case-section>
-            <p class="case-eyebrow">05</p>
-            <h2 class="case-major-title" id="requirements-title">REQUIREMENTS</h2>
+            <p class="case-eyebrow">05 / Requirements</p>
+            <h2 class="case-major-title" id="requirements-title">Turning user needs into explicit system behavior.</h2>
             <div class="scope-grid">
               <article><h3>In scope</h3><ul><li>Interview setup and guidance</li><li>Language and position selection</li><li>VR interview question flow</li><li>Voice capture and transcription</li><li>AI-supported answer analysis</li><li>Feedback and performance report</li></ul></article>
               <article><h3>Out of scope</h3><ul><li>Recruiter hiring decisions</li><li>Production-scale account management</li><li>Verified scoring for employment selection</li><li>Live interviewer marketplace</li><li>Enterprise analytics dashboard</li><li>Claims of clinical or psychological assessment</li></ul></article>
             </div>
 
-            <div class="table-scroll" tabindex="0" role="region" aria-label="Selected requirements table">
+            <div class="representative-grid" aria-label="Representative requirements">
+              <article><span>FR-01</span><h3>Interview guidance</h3><p>Present clear guidance before interview setup.</p></article>
+              <article><span>FR-02</span><h3>Language selection</h3><p>Allow candidates to select an available interview language.</p></article>
+              <article><span>FR-06</span><h3>Voice capture</h3><p>Capture and submit the candidate’s spoken answer.</p></article>
+              <article><span>FR-08</span><h3>Structured feedback</h3><p>Return structured feedback when analysis succeeds.</p></article>
+              <article><span>FR-09</span><h3>Failure recovery</h3><p>Show a clear recovery path when voice or AI processing fails.</p></article>
+              <article><span>NFR-01</span><h3>Processing states</h3><p>Communicate processing states and avoid unexplained waiting.</p></article>
+            </div>
+            <details class="deep-dive">
+              <summary>View full requirement catalogue <span aria-hidden="true">+</span></summary>
+              <div class="table-scroll" tabindex="0" role="region" aria-label="Full requirements table">
               <table class="requirements-table">
                 <thead><tr><th>ID</th><th>Requirement</th><th>Type</th><th>Priority</th><th>Validation note</th></tr></thead>
                 <tbody>
@@ -210,15 +218,16 @@
                   <tr><td>NFR-01</td><td>The interaction shall communicate processing states and avoid unexplained waiting.</td><td>Non-functional</td><td>Not specified</td><td>Latency threshold unresolved</td></tr>
                 </tbody>
               </table>
-            </div>
+              </div>
+            </details>
             <div class="artifact-insight artifact-purpose"><div><h3>Artifact purpose</h3><p>Create a shared, traceable baseline for design, development, and validation while keeping the first prototype focused on a complete practice loop before expanding platform features.</p></div></div>
           </section>
 
           <section class="case-section" id="user-stories" aria-labelledby="stories-title" data-case-section>
-            <p class="case-eyebrow">06</p>
-            <h2 class="case-major-title" id="stories-title">USER STORIES</h2>
+            <p class="case-eyebrow">06 / User stories</p>
+            <h2 class="case-major-title" id="stories-title">Defining behavior from the candidate’s point of view.</h2>
             <div class="story-list">
-              <details open>
+              <details>
                 <summary><span>US-01</span> Configure an interview session</summary>
                 <div><p>As a candidate, I want to configure my interview language and target position so that the practice session matches my needs.</p><ul><li>Given the candidate opens setup, when the options load, then available languages and positions are displayed and can be selected.</li><li>Given required setup is complete, when Start Interview is selected, then the simulation begins.</li><li>Given setup is incomplete, when the candidate attempts to start, then clear validation is shown.</li></ul></div>
               </details>
@@ -246,8 +255,8 @@
           </section>
 
           <section class="case-section" id="workflow" aria-labelledby="workflow-title" data-case-section>
-            <p class="case-eyebrow">07</p>
-            <h2 class="case-major-title" id="workflow-title">WORKFLOW</h2>
+            <p class="case-eyebrow">07 / Workflow</p>
+            <h2 class="case-major-title" id="workflow-title">From spoken answer to AI-supported response.</h2>
             <figure class="artifact-figure portrait-artifact">
               <button class="image-button" type="button" data-lightbox-src="../assets/images/virtuhire/sequence-diagram.png" data-lightbox-alt="Sequence diagram showing the VirtuHire voice and AI workflow">
                 <img src="../assets/images/virtuhire/sequence-diagram.png" alt="Sequence diagram showing the VirtuHire voice and AI workflow" loading="lazy" width="1500" height="2117">
@@ -266,8 +275,8 @@
           </section>
 
           <section class="case-section" id="use-case" aria-labelledby="use-case-title" data-case-section>
-            <p class="case-eyebrow">08</p>
-            <h2 class="case-major-title" id="use-case-title">USE CASE</h2>
+            <p class="case-eyebrow">08 / Use case</p>
+            <h2 class="case-major-title" id="use-case-title">Clarifying responsibilities across the interaction.</h2>
             <figure class="artifact-figure compact-artifact">
               <button class="image-button" type="button" data-lightbox-src="../assets/images/virtuhire/use-case-diagram.png" data-lightbox-alt="VirtuHire use case diagram showing candidate and AI API actors">
                 <img src="../assets/images/virtuhire/use-case-diagram.png" alt="VirtuHire use case diagram showing candidate and AI API actors" loading="lazy" width="1630" height="928">
@@ -283,8 +292,8 @@
           </section>
 
           <section class="case-section" id="prototype" aria-labelledby="prototype-title" data-case-section>
-            <p class="case-eyebrow">09</p>
-            <h2 class="case-major-title" id="prototype-title">PROTOTYPE</h2>
+            <p class="case-eyebrow">09 / Prototype</p>
+            <h2 class="case-major-title" id="prototype-title">From requirements to visible product states.</h2>
             <p>These screens show the implemented academic prototype at key points in the candidate flow. They are evidence of the interface state—not evidence of production readiness or completed user validation.</p>
             <div class="prototype-grid">
               <figure>
@@ -307,8 +316,8 @@
           </section>
 
           <section class="case-section" id="outcomes" aria-labelledby="outcomes-title" data-case-section>
-            <p class="case-eyebrow">10</p>
-            <h2 class="case-major-title" id="outcomes-title">OUTCOMES</h2>
+            <p class="case-eyebrow">10 / Outcomes</p>
+            <h2 class="case-major-title" id="outcomes-title">What did the artifacts clarify—and what remains open?</h2>
             <p>The project produced a working academic prototype and a clearer set of product artifacts. Validation in this case refers to reviewing consistency between the intended flow, documented requirements, diagrams, and visible prototype states; it does not represent a formal candidate pilot.</p>
             <div class="outcome-grid">
               <article><h3>What the artifacts clarified</h3><ul><li>The end-to-end candidate practice loop</li><li>Responsibilities across interface, backend, and AI services</li><li>Traceability from selected requirements to prototype screens</li><li>Failure paths needing explicit user feedback</li></ul></article>
@@ -317,8 +326,8 @@
           </section>
 
           <section class="case-section" id="lessons" aria-labelledby="lessons-title" data-case-section>
-            <p class="case-eyebrow">11</p>
-            <h2 class="case-major-title" id="lessons-title">LESSONS</h2>
+            <p class="case-eyebrow">11 / Lessons</p>
+            <h2 class="case-major-title" id="lessons-title">AI features still need conventional product requirements—not just prompts and models.</h2>
             <div class="lessons-grid">
               <article><h3>What I learned</h3><ul><li>AI features need conventional product requirements as much as they need prompts and models.</li><li>Waiting, error, and retry states are part of the core journey.</li><li>Diagrams become more useful when each one supports a concrete product decision.</li><li>Academic assumptions should remain clearly separated from validated user evidence.</li></ul></article>
               <article><h3>Recommended next steps</h3><ol><li>Run moderated usability sessions with target candidates.</li><li>Review question and feedback criteria with an HR subject-matter expert.</li><li>Define latency, accessibility, privacy, and data-retention requirements.</li><li>Test transcript correction and fallback interactions.</li><li>Refine report language based on comprehension testing.</li></ol></article>
@@ -328,7 +337,8 @@
       </div>
 
       <nav class="project-navigation case-container" aria-label="Project navigation">
-        <a class="return-link" href="../index.html">Return</a>
+        <a href="../index.html#projects">← All projects</a>
+        <a class="next-project" href="parkflow-b.html"><span>Next project</span>UEH Smart Parking System →</a>
       </nav>
     </article>
   </main>
@@ -336,8 +346,6 @@
   <footer>
     <div class="section-inner footer-inner">
       <p>© <span id="current-year">2026</span> Tran Thi Ngoc Thu</p>
-      <p>VirtuHire · Business Analysis case study</p>
-      <a href="#overview">Back to top ↑</a>
     </div>
   </footer>
 

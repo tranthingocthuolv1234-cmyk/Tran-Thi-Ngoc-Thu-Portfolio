@@ -70,11 +70,11 @@ h3 { font-size: 21px; letter-spacing: -.005em; }
 
 /* 7. Homepage hero */
 .hero { min-height: calc(95svh - var(--header-height)); display: flex; padding: clamp(4.5rem, 9vw, 8rem) var(--page-gutter) clamp(7rem, 12vh, 10rem); align-items: center; }
-.hero-inner { width: min(100%, var(--page-max)); display: grid; margin-inline: auto; align-items: center; grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); gap: clamp(2rem, 3vw, 3rem); }
-.hero-copy { max-width: none; }
+.hero-inner { width: min(100%, var(--page-max)); display: grid; margin-inline: auto; align-items: center; grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr); gap: clamp(2rem, 3vw, 3rem); }
+.hero-copy { min-width: 0; max-width: none; }
 .hero-label { margin: 0 0 clamp(.875rem, 1.4vw, 1.125rem); color: var(--accent); font-size: 14px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-.hero-title { max-width: none; margin: 0; font-size: clamp(2.625rem, 3.5vw, 3.25rem); font-weight: 500; letter-spacing: -.025em; line-height: 1.04; text-wrap: balance; }
-.hero-description { max-width: none; margin: clamp(.875rem, 1.4vw, 1.125rem) 0 0; color: var(--muted); font-size: clamp(17px, 1.4vw, 19px); font-style: italic; line-height: 1.55; text-align: justify; text-justify: inter-word; hyphens: auto; }
+.hero-title { max-width: none; margin: 0; font-size: clamp(2.375rem, 3.15vw, 3rem); font-weight: 500; letter-spacing: -.02em; line-height: 1.06; text-align: left; text-wrap: balance; }
+.hero-description { max-width: none; margin: clamp(.875rem, 1.4vw, 1.125rem) 0 0; color: var(--muted); font-size: clamp(17px, 1.4vw, 19px); font-style: italic; line-height: 1.55; text-align: left; text-wrap: balance; }
 .hero-art { width: 100%; max-width: 700px; margin: 0; justify-self: end; }
 .hero-art img { width: 100%; height: auto; object-fit: contain; }
 .hero-copy > * { animation: hero-reveal .45s ease both; }

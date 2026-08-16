@@ -1,5 +1,10 @@
 const caseSections = [...document.querySelectorAll('[data-case-section]')];
 const caseLinks = [...document.querySelectorAll('.case-toc a')];
+const caseContents = document.querySelector('.case-toc details');
+
+if (caseContents && matchMedia('(max-width: 900px)').matches) {
+  caseContents.removeAttribute('open');
+}
 
 if ('IntersectionObserver' in window && caseSections.length && caseLinks.length) {
   const sectionObserver = new IntersectionObserver(entries => {
