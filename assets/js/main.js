@@ -56,7 +56,7 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => observer.observe(section));
 
 const revealItems = document.querySelectorAll(
-  '.about-layout > .primary-section-title, .about-introduction, .education, .tools-panel, .projects-heading, .timeline-project, .section-heading, .primary-heading, .featured-achievement, .certifications, .contact-grid > *'
+  '.about-layout > .primary-section-title, .about-introduction, .education, .tools-panel, .projects-heading, .project-feature, .section-heading, .primary-heading, .featured-achievement, .certifications, .contact-grid > *'
 );
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => entry.target.classList.toggle('is-visible', entry.isIntersecting));
