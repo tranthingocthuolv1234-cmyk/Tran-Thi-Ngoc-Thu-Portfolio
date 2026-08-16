@@ -70,11 +70,11 @@ h3 { font-size: 21px; letter-spacing: -.005em; }
 
 /* 7. Homepage hero */
 .hero { min-height: calc(95svh - var(--header-height)); display: flex; padding: clamp(4.5rem, 9vw, 8rem) var(--page-gutter) clamp(7rem, 12vh, 10rem); align-items: center; }
-.hero-inner { width: min(100%, var(--page-max)); display: grid; margin-inline: auto; align-items: center; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2.5rem, 4.5vw, 4.5rem); }
-.hero-copy { max-width: 540px; }
+.hero-inner { width: min(100%, var(--page-max)); display: grid; margin-inline: auto; align-items: center; grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); gap: clamp(2rem, 3vw, 3rem); }
+.hero-copy { max-width: none; }
 .hero-label { margin: 0 0 clamp(1.5rem, 3vw, 2.25rem); color: var(--accent); font-size: 14px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-.hero-title { max-width: 540px; margin: 0; font-size: clamp(2.75rem, 3.8vw, 3.5rem); font-weight: 500; letter-spacing: -.025em; line-height: 1.04; text-wrap: balance; }
-.hero-description { max-width: 540px; margin: clamp(1.75rem, 3vw, 2.5rem) 0 0; color: var(--muted); font-size: clamp(17px, 1.4vw, 19px); font-style: italic; line-height: 1.55; text-wrap: balance; }
+.hero-title { max-width: none; margin: 0; font-size: clamp(2.625rem, 3.5vw, 3.25rem); font-weight: 500; letter-spacing: -.025em; line-height: 1.04; text-wrap: balance; }
+.hero-description { max-width: none; margin: clamp(1.75rem, 3vw, 2.5rem) 0 0; color: var(--muted); font-size: clamp(17px, 1.4vw, 19px); font-style: italic; line-height: 1.55; text-align: justify; text-justify: inter-word; hyphens: auto; }
 .hero-art { width: 100%; max-width: 700px; margin: 0; justify-self: end; }
 .hero-art img { width: 100%; height: auto; object-fit: contain; }
 .hero-copy > * { animation: hero-reveal .45s ease both; }
@@ -118,8 +118,8 @@ h3 { font-size: 21px; letter-spacing: -.005em; }
 .project-index { margin: 0 0 1.25rem; color: var(--accent); font-size: 14px; font-weight: 500; letter-spacing: .11em; line-height: 1.4; }
 .project-index span { font-weight: 700; }
 .project-feature-header { max-width: 900px; }
-.project-feature-title { margin: 0; color: var(--text); font-size: 26px; font-weight: 400; letter-spacing: -.01em; line-height: 1.2; text-wrap: balance; }
-.project-feature-descriptor { margin: .5rem 0 0; color: var(--muted); font-size: 17px; line-height: 1.5; text-wrap: balance; }
+.project-feature-title { margin: 0; color: var(--text); font-size: 26px; font-weight: 700; letter-spacing: -.01em; line-height: 1.2; text-wrap: balance; }
+.project-feature-descriptor { margin: .5rem 0 0; color: var(--muted); font-size: 17px; font-weight: 600; line-height: 1.5; text-wrap: balance; }
 .project-feature-description { width: min(100%, 960px); max-width: none; margin: 1.75rem auto 0; color: var(--muted); font-size: clamp(18px, 1.5vw, 20px); font-style: italic; line-height: 1.65; text-align: justify; text-justify: inter-word; hyphens: auto; }
 .project-feature-domain { margin: 1.25rem 0 0; color: var(--accent); font-size: 15px; font-weight: 500; letter-spacing: .025em; }
 .project-visual-link { width: min(100%, 960px); display: block; margin: clamp(3rem, 5vw, 4rem) auto 0; overflow: hidden; background: var(--surface); text-decoration: none; }
@@ -157,7 +157,7 @@ h3 { font-size: 21px; letter-spacing: -.005em; }
 
 /* 12. Footer */
 footer { padding: 1.3rem clamp(2rem, 6vw, 6.5rem); background: var(--text); color: var(--bg); }
-.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; font-size: 13px; }
+.footer-inner { display: flex; align-items: center; justify-content: flex-start; gap: 1rem; font-size: 13px; }
 .footer-inner p { margin: 0; }
 
 /* 13. Dark mode */
